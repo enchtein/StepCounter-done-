@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--On Boarding View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="OnBoardingViewController" id="Y6W-OH-hqX" customClass="OnBoardingViewController" customModule="freelance_app_39" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Wb-2e-nXZ">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="714"/>
+                            </containerView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KJA-68-kHa">
+                                <rect key="frame" x="0.0" y="751" width="393" height="1"/>
+                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="zrP-fF-WRh"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="B9i-3W-J4I">
+                                <rect key="frame" x="16" y="776" width="361" height="34"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k2d-Z4-6Nt" customClass="CommonButton" customModule="freelance_app_39" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="174.66666666666666" height="34"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Skip">
+                                            <color key="titleColor" name="systemOne"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="skipButtonAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="Fsr-fL-Ued"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bxf-r8-hFX" customClass="CommonButton" customModule="freelance_app_39" customModuleProvider="target">
+                                        <rect key="frame" x="186.66666666666663" y="0.0" width="174.33333333333337" height="34"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Continue">
+                                            <color key="titleColor" name="systemOne"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="continueButtonAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="wLc-Bu-SWH"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="KJA-68-kHa" secondAttribute="trailing" id="5rd-8j-9KN"/>
+                            <constraint firstItem="5Wb-2e-nXZ" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="79h-UQ-NHj"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="B9i-3W-J4I" secondAttribute="bottom" constant="8" id="Dkf-h3-GSC"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="B9i-3W-J4I" secondAttribute="trailing" constant="16" id="Jd2-WM-NuJ"/>
+                            <constraint firstItem="KJA-68-kHa" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="QUN-4A-ubs"/>
+                            <constraint firstItem="B9i-3W-J4I" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="XdW-hS-zqH"/>
+                            <constraint firstItem="KJA-68-kHa" firstAttribute="top" secondItem="5Wb-2e-nXZ" secondAttribute="bottom" constant="37" id="eEu-l0-KRX"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="5Wb-2e-nXZ" secondAttribute="trailing" id="nWP-1w-cRj"/>
+                            <constraint firstItem="B9i-3W-J4I" firstAttribute="top" secondItem="KJA-68-kHa" secondAttribute="bottom" constant="24" id="qPe-MC-xBI"/>
+                            <constraint firstItem="5Wb-2e-nXZ" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="wbl-ad-blD"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="buttonsHStack" destination="B9i-3W-J4I" id="tW8-QW-7tg"/>
+                        <outlet property="containerView" destination="5Wb-2e-nXZ" id="oR2-cu-TU9"/>
+                        <outlet property="continueButton" destination="bxf-r8-hFX" id="ub9-2e-x5T"/>
+                        <outlet property="divider" destination="KJA-68-kHa" id="bSN-gW-SSX"/>
+                        <outlet property="dividerBottom" destination="qPe-MC-xBI" id="IME-xB-V3m"/>
+                        <outlet property="dividerTop" destination="eEu-l0-KRX" id="kj1-xY-Pso"/>
+                        <outlet property="skipButton" destination="k2d-Z4-6Nt" id="Pbv-QE-nzs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="130.53435114503816" y="-34.507042253521128"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="systemOne">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
